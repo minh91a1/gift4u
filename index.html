@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+</head>
+<body>
+    <div id="world_map" class="map">
+        <div class="control-container">
+            <div></div>
+            <button id="go_top" class="control-item">TOP</button>
+            <div></div>
+            <button id="go_left" class="control-item">LEFT</button>
+            <div></div>
+            <button id="go_right" class="control-item">RIGHT</button>
+            <div></div>
+            <button id="go_down" class="control-item">DOWN</button>
+            <div></div>
+        </div>
+
+        <div class="question-board">
+            <p id="questionContent"></p>
+        </div>
+
+        <img id="target" class="circleEntity" src="./target.jpg"/>
+        <img id="avatar" class="circleEntity" src="./ava.png"/>
+
+        <div id="multimediaBoard" class="multimedia-board">
+            <button id="closeMultimediaBtn">X</button>
+            <img id="imgQuestion" class="multimediaQuestion"/>
+            <iframe id="videoQuestion" class="multimediaQuestion"></iframe>
+        </div>
+        
+    </div>
+
+    <div class="answer-board">
+        <button id="answerABtn" class="answer-card">A</button>
+        <button id="answerBBtn" class="answer-card">B</button>
+        <button id="answerCBtn" class="answer-card">C</button>
+        <button id="answerDBtn" class="answer-card">D</button>
+    </div>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

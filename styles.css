@@ -1,0 +1,132 @@
+.map {
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    width: 32rem;
+    height: 20rem;
+    background-color: transparent;
+    position: relative;
+    margin: auto;
+}
+
+.multimedia-board {
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    width: 32rem;
+    height: 20rem;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    position: absolute;
+}
+
+.circleEntity {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4rem;
+    border-radius: 50%;
+    animation: rotation 2s infinite linear;
+    animation-direction: alternate ;
+}
+.circleEntityNoAnimate {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+#closeMultimediaBtn {
+    float: left;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 30rem;
+    top: 0;
+    border-radius: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    min-width: 0;
+    min-height: 0;
+    z-index: 4;
+    background-color: orangered;
+}
+
+.control-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid gray;
+    width: 9rem;
+    height: 9rem;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    margin: 20.5rem 0rem 0rem 22.5rem ;
+}
+.control-item {
+    min-width: 0;
+    font-size: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.question-board {
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    width: 22rem;
+    min-height: 9.5rem;
+    margin: 20.5rem 0rem 0rem 0rem;
+    display: flex;
+    align-items: center;
+}
+
+#questionContent {
+    width: 100%;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.answer-board {
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    width: 32rem;
+    height: 6rem;
+    margin: 10.5rem auto;
+    display: flex;
+    align-items: center;
+    
+}
+
+.answer-card {
+    width: 4rem;
+    height: 4rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    margin: auto;
+}
+
+.multimediaQuestion {
+    margin: auto;
+    height: 18rem;
+    width: 30rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    position: absolute;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(-30deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}
