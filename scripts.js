@@ -266,6 +266,8 @@ function init() {
     target.style.left = 28 + 'rem';
 
     initQuestions();
+    
+    questionContentElement.textContent = "Xin chào! Hãy dùng các phím mũi tên bên dưới để di chuyển và vượt qua các câu hỏi để đến được với món quá nha!";
 }
 
 window.onload = init;
