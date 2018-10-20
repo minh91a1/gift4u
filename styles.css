@@ -66,19 +66,34 @@
     padding: 0.25rem;
     border-radius: 0.5rem;
     position: absolute;
-    margin: 20.5rem 0rem 0rem 22.5rem ;
+    left: 0;
+    right: 0;
+    margin: 37rem auto;
 }
 .control-item {
     min-width: 0;
     font-size: 0.5rem;
     width: 3rem;
     height: 3rem;
+    border:none;
+}
+#go_left{
+    background:url(http://i254.photobucket.com/albums/hh89/minh91a1/left.png) no-repeat;
+}
+#go_right{
+    background:url(http://i254.photobucket.com/albums/hh89/minh91a1/right.png) no-repeat;
+}
+#go_top{
+    background:url(http://i254.photobucket.com/albums/hh89/minh91a1/up.png) no-repeat;
+}
+#go_down{
+    background:url(http://i254.photobucket.com/albums/hh89/minh91a1/down.png) no-repeat;
 }
 
 .question-board {
     border: 1px solid gray;
     border-radius: 0.5rem;
-    width: 22rem;
+    width: 100%;
     min-height: 9.5rem;
     margin: 20.5rem 0rem 0rem 0rem;
     display: flex;
