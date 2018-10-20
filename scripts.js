@@ -267,7 +267,7 @@ function init() {
 
     initQuestions();
     
-    questionContentElement.textContent = "Xin chào! Hãy dùng các phím mũi tên bên dưới để di chuyển và vượt qua các câu hỏi để đến được với món quá nha!";
+    questionContentElement.textContent = "Xin chào!\r\nHãy dùng các phím mũi tên bên dưới để di chuyển và vượt qua các câu hỏi để đến được với món quá nha!";
 }
 
 window.onload = init;
