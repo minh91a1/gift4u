@@ -1,11 +1,13 @@
 .map {
-    border: 1px solid gray;
+    border: 1px solid white;
     border-radius: 0.5rem;
     width: 32rem;
     height: 20rem;
     background-color: transparent;
     position: relative;
     margin: auto;
+    background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('https://nutrangcuoivn.com/detail/wp-content/uploads/2018/10/dienhoahanoi-1522529085.jpg');
+    background-size: 100% 100%;
 }
 
 .multimedia-board {
@@ -121,7 +123,7 @@
     width: 4rem;
     height: 4rem;
     border: 1px solid gray;
-    border-radius: 0.5rem;
+    border-radius: 50%;
     margin: auto;
 }
 
