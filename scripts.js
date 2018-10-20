@@ -25,9 +25,10 @@ var questionElementMap = new Map();
 var _currentQuestionId = -1;
 var questionData = [
     {textContent:'dump', answer: 'X'},
-    {textContent:'18 + 2 = ? \r\n\r\n A.20 __ B.22 __ C.24 __ D.32', answer: 'A', is18p: true},
-    {textContent:'Hình nào dài hơn ? \r\n\r\n A.trên __ B.dưới __ C.bằng nhau __ D.chịu', answer: 'C', link: 'https://upload.wikimedia.org/wikipedia/commons/4/49/Jastrow-illusion-track.jpg', isImage: true},
     {textContent:'2 con vịt đi trước 2 con vịt, 2 con vịt đi sau 2 con vịt, 2 con vịt đi giữa 2 con. \r\nVậy có bao nhiêu con vịt? \r\n\r\n A.1 __ B.2 __ C.3 __ D.4', answer: 'D'},
+    {textContent:'Hình nào dài hơn ? \r\n\r\n A.trên __ B.dưới __ C.bằng nhau __ D.chịu', answer: 'C', link: 'https://upload.wikimedia.org/wikipedia/commons/4/49/Jastrow-illusion-track.jpg', isImage: true},
+    
+    {textContent:'18 + 2 = ? \r\n\r\n A.20 __ B.22 __ C.24 __ D.32', answer: 'A', is18p: true},
     {textContent:'Hình nền windows 10 là sản phẩm của ? \r\n\r\n A.Photoshop __ B.Illustrator __ C.Lightroom __ D.Chụp trực tiếp', answer: 'D', link: 'https://anh.24h.com.vn/upload/2-2015/images/2015-06-27/1435416949-xsyvmicrosoft_reveals_the_official_windows_10_wallpaper_485311_4_gcua.jpg', isImage: true},
     {textContent:'Chữ này là chữ ? \r\n\r\n A.CHÚC __ B.MỪNG __ C.HẠNH __ D.PHÚC', answer: 'C', link: 'https://www.chunom.org/media/generated/5E78-300.png', isImage: true},
     {textContent:'Sở thú bị cháy, con gì chạy ra đầu tiên ? \r\n\r\n A.Con chim __ B.Con rắn __ C.Con nai __ D.Con cá', answer: 'C'},
