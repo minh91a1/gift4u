@@ -85,7 +85,8 @@ function triggerQuestion(id) {
         return;
     }
     if (id == 99) {
-        questionContentElement.textContent = "Xin chúc mừng\r\nCảm ơn em đã dành thời gian chơi cái game cùi mía này. Chúc em 20-10 vẫn cứ xinh đẹp và vui vẻ như vậy nha.\r\nEm mãi có một vị trí trong lòng anh\r\n♪♫♪♫";
+        questionContentElement.textContent = "Xin chúc mừng\r\nCảm ơn Hạnh đã dành thời gian chơi cái game cùi mía này.\r\n\
+Chúc Hạnh 20-10 vẫn cứ xinh đẹp và vui vẻ như vậy nha.\r\n♪ ♪ ♪";
         playTheme();
         return;
     }
