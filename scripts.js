@@ -36,7 +36,7 @@ var questionData = [
     
     {textContent:'Con mèo đã làm gì ở cuối video ? \r\n\r\n A.Đánh nhau __ B.Vuốt ve __ C.Nằm ngủ __ D.Đứng im', answer: 'A', link: 'https://www.youtube.com/embed/yNS7zzIzX-E', isVideo: true},
     
-    {textContent:'Có bao nhiêu chấm đen ? \r\n\r\n A.4 __ B.8 __ C.12 __ D.16', answer: 'C', link:'./chamden.png', isImage:true},
+    {textContent:'Có bao nhiêu chấm đen ? \r\n\r\n A.4 __ B.8 __ C.12 __ D.16', answer: 'C', link:'http://i254.photobucket.com/albums/hh89/minh91a1/chamden.png', isImage:true},
 
     {textContent:'A và B màu nào đậm hơn ? \r\n\r\n A.A __ B.B __ C.Như nhau __ D.Chịu', answer: 'C', link:'http://blog.visme.co/wp-content/uploads/2017/01/Checker-shadow-illusion.png', isImage: true},
     {textContent:'Mèo tam thể là mèo ... ? \r\n\r\n A.đực __ B.cái __ C.tùy __ D.bê đê', answer: 'B'},
