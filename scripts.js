@@ -10,6 +10,8 @@ const videoQuestion = document.getElementById('videoQuestion');
 const closeMultiQuestion = document.getElementById('closeMultimediaBtn');
 const multimediaBoard = document.getElementById('multimediaBoard');
 
+const mainThemeAudio = document.getElementById('mainThemeAudio');
+
 var map = [
     [0, 0, 0, 0,10, 0, 0, 0],
     [0, 1, 0, 0, 0, 5, 0, 9],
@@ -25,7 +27,7 @@ var questionData = [
     {textContent:'dump', answer: 'X'},
     {textContent:'18 + 2 = ? \r\n\r\n A.20 __ B.22 __ C.24 __ D.32', answer: 'A', is18p: true},
     {textContent:'Hình nào dài hơn ? \r\n\r\n A.trên __ B.dưới __ C.bằng nhau __ D.chịu', answer: 'C', link: 'https://upload.wikimedia.org/wikipedia/commons/4/49/Jastrow-illusion-track.jpg', isImage: true},
-    {textContent:'2 con vịt đi trước 2 con vịt, 2 con vịt đi sau 2 con vịt, 2 con vịt đi giữa 2 con  ? \r\n A.1 __ B.2 __ C.3 __ D.4', answer: 'D'},
+    {textContent:'2 con vịt đi trước 2 con vịt, 2 con vịt đi sau 2 con vịt, 2 con vịt đi giữa 2 con. \r\nVậy có bao nhiêu con vịt? \r\n\r\n A.1 __ B.2 __ C.3 __ D.4', answer: 'D'},
     {textContent:'Hình nền windows 10 là sản phẩm của ? \r\n\r\n A.Photoshop __ B.Illustrator __ C.Lightroom __ D.Chụp trực tiếp', answer: 'D', link: 'https://anh.24h.com.vn/upload/2-2015/images/2015-06-27/1435416949-xsyvmicrosoft_reveals_the_official_windows_10_wallpaper_485311_4_gcua.jpg', isImage: true},
     {textContent:'Chữ này là chữ ? \r\n\r\n A.CHÚC __ B.MỪNG __ C.HẠNH __ D.PHÚC', answer: 'C', link: 'https://www.chunom.org/media/generated/5E78-300.png', isImage: true},
     {textContent:'Sở thú bị cháy, con gì chạy ra đầu tiên ? \r\n\r\n A.Con chim __ B.Con rắn __ C.Con nai __ D.Con cá', answer: 'C'},
@@ -59,6 +61,14 @@ var ava_left = 0;
 var walk_step = 4;
 var can_move = true;
 
+function playTheme() {
+    if (mainThemeAudio.src.indexOf('.mp3') == -1 || mainThemeAudio.src == '')
+        mainThemeAudio.src='./ANewDay-PederBHelland-5438208.mp3'
+}
+function stopTheme() {
+    mainThemeAudio.src = 'none';
+}
+
 function closeAllMultimedia() {
     imgQuestion.style.visibility = 'hidden';
     imgQuestion.src = '';
@@ -75,7 +85,8 @@ function triggerQuestion(id) {
         return;
     }
     if (id == 99) {
-        questionContentElement.textContent = "Chúc mừng bạn đã hoàn thành game!";
+        questionContentElement.textContent = "Xin chúc mừng\r\nCảm ơn em đã dành thời gian chơi cái game cùi mía này. Chúc em 20-10 vẫn cứ xinh đẹp và vui vẻ như vậy nha.\r\nEm mãi có một vị trí trong lòng anh\r\n♪♫♪♫";
+        playTheme();
         return;
     }
 
@@ -101,6 +112,7 @@ function triggerQuestion(id) {
         videoQuestion.style.visibility = 'visible';
         closeMultiQuestion.style.visibility = 'visible';
         multimediaBoard.style.visibility = 'visible';
+        stopTheme();
     }
 
     questionContentElement.textContent = data.textContent;
@@ -218,7 +230,7 @@ closeMultiQuestion.addEventListener('click' , function() {
 function createWrong(top,left) {
     var img = document.createElement('img');
     img.className = 'circleEntityNoAnimate';
-    img.src = './wrong.png';
+    img.src = 'http://i254.photobucket.com/albums/hh89/minh91a1/wrong.png';
     img.style.top = top + 'rem';
     img.style.left = left + 'rem';
     worldMap.appendChild(img);
@@ -228,7 +240,7 @@ function createQuestion(top,left,id) {
     var img = document.createElement('img');
     img.id = 'question' + id;
     img.className = 'circleEntity';
-    img.src = './question.png';
+    img.src = 'http://i254.photobucket.com/albums/hh89/minh91a1/question.png';
     img.style.top = top + 'rem';
     img.style.left = left + 'rem';
     worldMap.appendChild(img);
