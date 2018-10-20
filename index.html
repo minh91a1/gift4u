@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9, user-scalable=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Gift only for you</title>
     <link rel="stylesheet" type="text/css" href="./styles.css"/>
 </head>
 <body>
     <div id="world_map" class="map">
         <div class="control-container">
             <div></div>
-            <button id="go_top" class="control-item">TOP</button>
+            <button id="go_top" class="control-item"></button>
             <div></div>
-            <button id="go_left" class="control-item">LEFT</button>
+            <button id="go_left" class="control-item"></button>
             <div></div>
-            <button id="go_right" class="control-item">RIGHT</button>
+            <button id="go_right" class="control-item"></button>
             <div></div>
-            <button id="go_down" class="control-item">DOWN</button>
+            <button id="go_down" class="control-item"></button>
             <div></div>
         </div>
 
@@ -25,8 +25,8 @@
             <p id="questionContent"></p>
         </div>
 
-        <img id="target" class="circleEntity" src="./gift.png"/>
-        <img id="avatar" class="circleEntity" src="./ava.PNG"/>
+        <img id="target" class="circleEntity" src="http://i254.photobucket.com/albums/hh89/minh91a1/gift.png"/>
+        <img id="avatar" class="circleEntity" src="http://i254.photobucket.com/albums/hh89/minh91a1/ava.png"/>
 
         <div id="multimediaBoard" class="multimedia-board">
             <button id="closeMultimediaBtn">X</button>
@@ -34,6 +34,9 @@
             <iframe id="videoQuestion" class="multimediaQuestion"></iframe>
         </div>
         
+
+        <iframe allow="autoplay" style="display:none" id="mainThemeAudio"></iframe> 
+
     </div>
 
     <div class="answer-board">
