@@ -1,5 +1,17 @@
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, pink, white);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 .map {
-    border: 1px solid white;
+    border: 1px solid pink;
     border-radius: 0.5rem;
     width: 32rem;
     height: 20rem;
@@ -8,10 +20,11 @@
     margin: auto;
     background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url('https://nutrangcuoivn.com/detail/wp-content/uploads/2018/10/dienhoahanoi-1522529085.jpg');
     background-size: 100% 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .multimedia-board {
-    border: 1px solid gray;
+    border: 1px solid transparent;
     border-radius: 0.5rem;
     width: 32rem;
     height: 20rem;
@@ -62,7 +75,7 @@
 .control-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    border: 1px solid gray;
+    border: 1px solid transparent;
     width: 9rem;
     height: 9rem;
     padding: 0.25rem;
@@ -93,13 +106,15 @@
 }
 
 .question-board {
-    border: 1px solid gray;
+    border: 1px solid transparent;
     border-radius: 0.5rem;
     width: 100%;
     min-height: 9.5rem;
     margin: 20.5rem 0rem 0rem 0rem;
     display: flex;
     align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #questionContent {
@@ -109,14 +124,15 @@
 }
 
 .answer-board {
-    border: 1px solid gray;
+    border: 1px solid transparent;
     border-radius: 0.5rem;
     width: 32rem;
     height: 6rem;
     margin: 10.5rem auto;
     display: flex;
     align-items: center;
-    
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .answer-card {
